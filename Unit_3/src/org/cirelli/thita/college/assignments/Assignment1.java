@@ -14,8 +14,8 @@ import org.cirelli.thita.college.lib.Assignment;
 import org.cirelli.thita.college.lib.Section;
 
 public class Assignment1 extends Assignment {
-    public Assignment1(int n, String p) {
-        super(n, p);
+    public Assignment1() {
+        super(1, "A");
         addSection(new One());
         addSection(new Two());
         addSection(new Three());
@@ -66,7 +66,7 @@ class Two extends Section {
         output.add("Original List:");
         output.add(String.join(", ", titleList));
         output.add("Sorted Book List:");
-        titleList.sort(Comparator.naturalOrder());        
+        titleList.sort(Comparator.naturalOrder());
         output.add(String.join(", ", titleList));
         titleList.remove(1);
         titleList.removeFirst();
