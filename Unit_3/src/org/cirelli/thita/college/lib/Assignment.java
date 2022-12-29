@@ -14,6 +14,7 @@ public class Assignment implements IAssignment{
     }
 
    public void run() {
+        System.out.println(toString());
         for (ISection s : sections) {
             s.run();
             System.out.println(s.toString());
@@ -31,9 +32,11 @@ public class Assignment implements IAssignment{
     public String getPart() {
         return part;
     }
-
+ 
     @Override
     public String toString() {
-        return "Assignment " + getNumber() + ", Part " + getPart() + ", ";
+        String s = "Assignment " + getNumber() + ", Part " + getPart() + ", \n";
+        String p = "*".repeat(s.length()) + "\n";
+        return "\n\n" + p + s + p;
     }
 }

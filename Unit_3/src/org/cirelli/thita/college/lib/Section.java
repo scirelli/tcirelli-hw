@@ -9,7 +9,7 @@ public abstract class Section implements ISection{
 
     public Section(){
         output = new ArrayList<>(Arrays.asList(
-            "\n*********** Section: " + getNumber() + "***********"
+            "\n*********** Section: " + getNumber() + " ***********"
         ));
     }
 

@@ -132,7 +132,7 @@ class BThree extends Section{
         });
 
         bt.insert(Arrays.asList(new Integer[]{50, 30, 45,12, 29}));
-        //bt.insert(Arrays.asList(new Integer[]{2,1,3}));
+        bt.insert(Arrays.asList(new Integer[]{2,1,3}));
 
         output.add("Traversing the binary tree in order:");
         ArrayList<String> a = new ArrayList<>();
