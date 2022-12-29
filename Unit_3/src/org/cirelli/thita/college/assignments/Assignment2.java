@@ -9,7 +9,6 @@ import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import org.cirelli.thita.college.assignments.Three.BinaryTree;
 import org.cirelli.thita.college.lib.Assignment;
 import org.cirelli.thita.college.lib.Section;
 
