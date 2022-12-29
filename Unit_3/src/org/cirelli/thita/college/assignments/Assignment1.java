@@ -124,7 +124,7 @@ class Three extends Section{
     }
 
     static class BinaryTree<T> {
-        private Node<T> root = null;
+        protected Node<T> root = null;
         private Comparator<T> comparer;
 
         public BinaryTree(Comparator<T> compr){
@@ -168,15 +168,15 @@ class Three extends Section{
             }
         }
 
-        public List<Node<T>> traverse() {
-            return _traverse(root, new ArrayList<Node<T>>());
+        public List<Node<T>> inOrderTraverse() {
+            return _inOrderTraverse(root, new ArrayList<Node<T>>());
         }
 
-        private List<Node<T>> _traverse(Node<T> node, List<Node<T>> result) {
+        private List<Node<T>> _inOrderTraverse(Node<T> node, List<Node<T>> result) {
             if(node == null) return result;
-            _traverse(node.getLeft(), result);
+            _inOrderTraverse(node.getLeft(), result);
             result.add(node);
-            _traverse(node.getRight(), result);
+            _inOrderTraverse(node.getRight(), result);
 
             return result;
         }
@@ -197,10 +197,10 @@ class Three extends Section{
         });
 
         bt.insert(Arrays.asList(new Integer[]{50, 30, 45,12, 29}));
-        output.add("The contents of the binary tree are:");
 
+        output.add("The contents of the binary tree are:");
         ArrayList<String> a = new ArrayList<>();
-        for(Node<Integer> n : bt.traverse()){
+        for(Node<Integer> n : bt.inOrderTraverse()){
             a.add(n.toString());
         }
         output.add(String.join(", ", a));
