@@ -132,6 +132,7 @@ class BThree extends Section{
         });
 
         bt.insert(Arrays.asList(new Integer[]{50, 30, 45,12, 29}));
+        //bt.insert(Arrays.asList(new Integer[]{2,1,3}));
 
         output.add("Traversing the binary tree in order:");
         ArrayList<String> a = new ArrayList<>();
@@ -147,7 +148,7 @@ class BThree extends Section{
         }
         output.add(String.join(", ", a));
 
-        output.add("Traversing the binary tree in prost-order: ");
+        output.add("Traversing the binary tree in post-order: ");
         a = new ArrayList<>();
         for(Three.Node<Integer> n : bt.postOrderTraverse()){
             a.add(n.toString());
