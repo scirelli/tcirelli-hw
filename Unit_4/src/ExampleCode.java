@@ -12,7 +12,7 @@ public class ExampleCode {
         System.out.print("The array unsorted is: [");
         for (int i = 0; i < myNumbers.length; i++) {
             System.out.print(myNumbers[i]);
-            if (i != myNumbers.length) {
+            if (i != myNumbers.length-1) {
                 System.out.print(",");
             }
         }
@@ -26,7 +26,7 @@ public class ExampleCode {
         System.out.print("The array sorted is: [");
         for (int i = 0; i < myNumbers.length; i++) {
             System.out.print(myNumbers[i]);
-            if (i != myNumbers.length) {
+            if (i != myNumbers.length-1) {
                 System.out.print(",");
             }
         }
@@ -45,7 +45,7 @@ public class ExampleCode {
         System.out.print("The array unsorted is : [");
         for (int i = 0; i < myArray.length; i++) {
             System.out.print(myArray[i]);
-            if (i != myArray.length) {
+            if (i != myArray.length-1) {
                 System.out.print(",");
             }
         }
@@ -57,7 +57,7 @@ public class ExampleCode {
         System.out.print("The array sorted is : [");
         for (int i = 0; i < myArray.length; i++) {
             System.out.print(myArray[i]);
-            if (i != myArray.length) {
+            if (i != myArray.length-1) {
                 System.out.print(",");
             }
         }
