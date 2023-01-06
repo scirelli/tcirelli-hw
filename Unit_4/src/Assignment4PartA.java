@@ -1,4 +1,4 @@
-public class ExampleCode {
+public class Assignment4PartA {
     public static void main(String[] args) throws Exception {
         // *********************************************************
         // ****Assignment 4, Part A, Section 1
